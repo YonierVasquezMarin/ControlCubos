@@ -17,9 +17,9 @@ public class CuboFlexible extends Cubo {
         double precioCubo = super.precio();
         double precioCuboIncrementado = 0;
         if (this.elasticidad < 50) {
-            precioCuboIncrementado = precioCubo + (precioCubo * 0.4);
+            precioCuboIncrementado = precioCubo + (precioCubo * 0.04);
         } else {
-            precioCuboIncrementado = precioCubo + (precioCubo * 0.6);
+            precioCuboIncrementado = precioCubo + (precioCubo * 0.06);
         }
         return precioCuboIncrementado;
     }
